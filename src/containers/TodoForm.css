@@ -1,0 +1,11 @@
+.TodoForm {
+	background-color: grey;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	width: 90vw;
+	padding: 10px;
+	line-height: 35px;
+}
