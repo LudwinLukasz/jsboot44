@@ -26,15 +26,15 @@ class App extends React.Component {
 		};
 	}
 	addTodo(val) {
+		if(val.length) {
 		console.log("dodaj");
 		const todo = {
 			text: val,
 			id: uuid.v4(),
 		};
 		const data = [...this.state.data, todo];
-		this.setState({data});
-		const inputValue = "";
-		this.setState(inputValue);
+		this.setState({data: data, inputValue: ''});
+	}
 	}
 	removeTodo(id) {
 		const remainder = this.state.data.filter(todo => todo.id !== id);
