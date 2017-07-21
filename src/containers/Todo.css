@@ -1,0 +1,12 @@
+
+.Todo {
+	display: block;
+	width: 97%;
+	margin: 5px;
+	padding: 5px;
+    background-color: grey;
+    color: yellow;
+    text-align: left;
+    font-size: 16px;
+    border: 1px solid yellow;
+}
