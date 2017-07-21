@@ -9,13 +9,13 @@ ReactDOM.render(
 );
 
 if (module.hot) {
-  module.hot.accept('./containers/App', () => {
-    const NextApp = require('./containers/App').default;
-    ReactDOM.render(
-            <AppContainer>
-                <NextApp />
-            </AppContainer>,
-      document.getElementById('app')
-    );
-  });
+	module.hot.accept('./containers/App', () => {
+		const NextApp = require('./containers/App').default;
+		ReactDOM.render(
+			<AppContainer>
+				<NextApp />
+			</AppContainer>,
+		document.getElementById('app')
+		);
+	});
 }

@@ -4,7 +4,9 @@ import style from './App.css';
 import Title from './Title';
 import TodoList from './TodoList';
 import TodoForm from './TodoForm';
+
 var newtodo = "";
+
 class App extends React.Component {
 	constructor(props) {
 		super(props);
@@ -22,20 +24,21 @@ class App extends React.Component {
 				text: 'feed my cat'
 				}
 			],
-			inputValue: ""
+			inputValue: ''
 		};
 	}
+
 	addTodo(val) {
 		if(val.length) {
-		console.log("dodaj");
-		const todo = {
-			text: val,
-			id: uuid.v4(),
-		};
-		const data = [...this.state.data, todo];
-		this.setState({data: data, inputValue: ''});
+			const todo = {
+				text: val,
+				id: uuid.v4(),
+			};
+			const data = [...this.state.data, todo];
+			this.setState({data: data, inputValue: ''});
+		}
 	}
-	}
+
 	removeTodo(id) {
 		const remainder = this.state.data.filter(todo => todo.id !== id);
 		this.setState({data: remainder});

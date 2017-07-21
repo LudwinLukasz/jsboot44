@@ -1,4 +1,3 @@
-//webpack.config.js
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var UglifyJSPlugin = require('uglifyjs-webpack-plugin');
@@ -12,7 +11,6 @@ module.exports = {
 		'./src/index.js'
 	],
 	output: {
-		 // path: '/luk/JS_bootcamp/JSboot41/build',
 		path: path.resolve(__dirname,'build'),
 		filename: 'app.bundle.js'
 	},
